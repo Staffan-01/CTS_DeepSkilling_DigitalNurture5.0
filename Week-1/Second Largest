@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scaanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i = 0; i < n; arr[i++] = sc.nextInt());
+        int lrg = Integer.MIN_VALUE;
+        int slrg = Integer.MIN_VALUE;
+        for(int i : arr) {
+            if(i > lrg) {
+                slrg = lrg;
+                lrg = i;
+            }
+            else if(i > slrg && i != lrg) {
+                slrg = i;
+            }
+        }
+        System.out.println(slrg);
+    }
+}
