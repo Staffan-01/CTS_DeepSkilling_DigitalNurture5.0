@@ -1,0 +1,24 @@
+
+class Employee {
+    int id;
+    String name;
+    Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    public String toString() {
+        return id + " " + name;
+    }
+}
+
+public class EmployeeManagement {
+    public static void main(String[] args) {
+        ArrayList<Employee> employees = new ArrayList<>();
+        employees.add(new Employee(101, "John"));
+        employees.add(new Employee(102, "Sam"));
+        employees.add(new Employee(103, "David"));
+        for(Employee e : employees) {
+            System.out.println(e);
+        }
+    }
+}
