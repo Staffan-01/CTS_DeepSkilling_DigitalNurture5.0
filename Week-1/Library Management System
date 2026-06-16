@@ -1,0 +1,22 @@
+class Book {
+    int id;
+    String title;
+    Book(int id,String title) {
+        this.id = id;
+        this.title = title;
+    }
+    public String toString() {
+        return id + " " + title;
+    }
+}
+
+public class LibraryManagement {
+    public static void main(String[] args) {
+        ArrayList<Book> books = new ArrayList<>();
+        books.add(new Book(1,"Java"));
+        books.add(new Book(2,"DSA"));
+        books.add(new Book(3,"Spring Boot"));
+        for(Book b : books)
+            System.out.println(b);
+    }
+}
