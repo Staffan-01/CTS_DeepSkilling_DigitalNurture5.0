@@ -1,0 +1,48 @@
+class Node {
+    int taskId;
+    String taskName;
+    Node next;
+    Node(int taskId, String taskName) {
+        this.taskId = taskId;
+        this.taskName = taskName;
+        this.next = null;
+    }
+}
+
+public class TaskManagementUsingLinkedLis {
+    Node head = null;
+    void addTask(int taskId, String taskName) {
+        Node newNode = new Node(taskId, taskName);
+        if(head == null) {
+            head = newNode;
+        }
+        else {
+            Node temp = head;
+            while(temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
+
+    void displayTasks() {
+        if(head == null) {
+            System.out.println("No Tasks Available");
+            return;
+        }
+        Node temp = head;
+        while(temp != null) {
+            System.out.println("Task ID : " + temp.taskId + " | Task Name : " + temp.taskName);
+            temp = temp.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        TaskManagementUsingLinkedList obj = new TaskManagementUsingLinkedList();
+        obj.addTask(101, "Learn SQL");
+        obj.addTask(102, "Learn Spring Boot");
+        obj.addTask(103, "Learn Maven");
+        System.out.println("Task List:");
+        obj.displayTasks();
+    }
+}
