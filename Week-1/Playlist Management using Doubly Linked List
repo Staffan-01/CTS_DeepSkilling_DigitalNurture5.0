@@ -1,0 +1,50 @@
+class Song {
+    String songName;
+    Song prev, next;
+    Song(String songName) {
+        this.songName = songName;
+        this.prev = null;
+        this.next = null;
+    }
+}
+
+public class MusicPlaylistUsingDoublyLinkedList {
+    Song head = null, tail = null;
+    void addSong(String songName) {
+        Song newSong = new Song(songName);
+        if(head == null) {
+            head = tail = newSong;
+        }
+        else {
+            tail.next = newSong;
+            newSong.prev = tail;
+            tail = newSong;
+        }
+    }
+    void displayForward() {
+        Song temp = head;
+        System.out.println("Playlist (Forward)");
+        while(temp != null) {
+            System.out.println(temp.songName);
+            temp = temp.next;
+        }
+    }
+    void displayBackward() {
+        Song temp = tail;
+        System.out.println("Playlist (Backward)");
+        while(temp != null) {
+            System.out.println(temp.songName);
+            temp = temp.prev;
+        }
+    }
+    public static void main(String[] args) {
+        MusicPlaylistUsingDoublyLinkedList obj = new MusicPlaylistUsingDoublyLinkedList();
+        obj.addSong("Believer");
+        obj.addSong("Perfect");
+        obj.addSong("Shape Of You");
+        obj.addSong("Bones");
+        obj.displayForward();
+        System.out.println();
+        obj.displayBackward();
+    }
+}
