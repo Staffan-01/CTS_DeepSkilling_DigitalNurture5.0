@@ -1,0 +1,20 @@
+CREATE TABLE Student(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    department VARCHAR(20)
+);
+
+INSERT INTO Student VALUES
+(101,'John',21,'CSE'),
+(102,'Sam',22,'ECE'),
+(103,'David',20,'IT');
+
+SELECT * FROM Student;
+
+UPDATE Student
+SET age = 23
+WHERE id = 102;
+
+DELETE FROM Student
+WHERE id = 103;
