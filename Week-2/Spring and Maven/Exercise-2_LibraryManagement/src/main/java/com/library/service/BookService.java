@@ -1,0 +1,24 @@
+package com.library.service;
+
+import com.library.repository.BookRepository;
+
+public class BookService {
+
+    private BookRepository bookRepository;
+
+    public void setBookRepository(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
+    public BookRepository getBookRepository() {
+        return bookRepository;
+    }
+
+    public String getBook(int id) {
+        return bookRepository.findBookById(id);
+    }
+
+    public String getAllBooks() {
+        return bookRepository.findAllBooks();
+    }
+}
