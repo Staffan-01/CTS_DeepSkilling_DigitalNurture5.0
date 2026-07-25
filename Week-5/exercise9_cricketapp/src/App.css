@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.flag-status {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.list-container,
+.indian-players-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+  color: #555;
+}
+
+p {
+  margin: 5px 0;
+  color: #666;
+}
