@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.welcome-msg {
+  color: #4CAF50;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  background-color: white;
+  color: #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-buttons button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content-container {
+  text-align: left;
+}
+
+.details-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-card h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.book-card h2 {
+  color: #2196F3;
+  border-bottom-color: #2196F3;
+}
+
+.blog-card h2 {
+  color: #ff9800;
+  border-bottom-color: #ff9800;
+}
+
+.course-card h2 {
+  color: #9c27b0;
+  border-bottom-color: #9c27b0;
+}
+
+.card-content h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-content p {
+  color: #666;
+  margin: 5px 0;
+  line-height: 1.5;
+}
