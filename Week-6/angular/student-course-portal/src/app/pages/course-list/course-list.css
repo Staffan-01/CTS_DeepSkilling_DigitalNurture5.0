@@ -1,0 +1,22 @@
+.course-list-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.search-bar {
+  margin-bottom: 1rem;
+}
+.search-bar input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 300px;
+}
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+}

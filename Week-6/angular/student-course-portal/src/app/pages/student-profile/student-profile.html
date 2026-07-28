@@ -1,0 +1,18 @@
+<div class="profile-container">
+  <h2>Student Profile</h2>
+  <div class="profile-info">
+    <p><strong>Name:</strong> John Doe</p>
+    <p><strong>Email:</strong> john@example.com</p>
+    <p><strong>Student ID:</strong> STU001</p>
+  </div>
+
+  <h3>Enrolled Courses</h3>
+  <div *ngIf="enrolledCourses.length === 0">
+    <p>No courses enrolled yet.</p>
+  </div>
+  <ul class="enrolled-list">
+    <li *ngFor="let course of enrolledCourses">
+      {{ course.name }} ({{ course.code }}) - {{ course.credits }} credits
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,64 @@
+.form-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.error {
+  color: red;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+.additional-course {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.additional-course input {
+  flex: 1;
+}
+.additional-course button {
+  padding: 0.5rem 1rem;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-actions {
+  margin-top: 1.5rem;
+}
+.form-actions button {
+  padding: 0.5rem 1.5rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.form-actions button:disabled {
+  background: #ccc;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+}
